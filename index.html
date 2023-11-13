@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Weather App</title>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="search-container">
+      <input type="text" id="city" class="searchInput" placeholder="Your city name" />
+      <button type="submit" id="submit">Search</button>
+    </div>
+    <p class="name">-My Weather App-</p>
+
+    <div class="inner1">
+      <div class="left">
+        <div id="cityName" class="cityName"><i class="ri-temp-hot-line"></i></div>
+        <div class="temp"><div id="temp"></div><i class="ri-celsius-line"></i></div>
+      </div>
+      <div class="right">
+        <p class="p1">Min Temp-</p>
+        <div class="min_temp">
+          <div id="min_temp"></div>
+          <i class="ri-celsius-line"></i>
+        </div>
+        <p class="p1">Max Temp-</p>
+        <div class="max_temp">
+          <div id="max_temp"></div>
+          <i class="ri-celsius-line"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner2">
+      <div class="wind">
+        <div class="wind_speed">
+          <p>Wind Speed</p>
+          <i class="ri-windy-line"></i>
+          <div id="wind_speed"></div>
+        </div>
+        <div class="wind_degrees">
+          <p>Wind Degree</p>
+          <i class="ri-windy-line"></i>
+          <div id="wind_degrees"></div>
+        </div>
+      </div>
+      <div class="sun">
+        <div class="sunrise">
+          <p>Sunrise Time</p>
+          <i class="ri-sun-line"></i>
+          <div id="sunrise"></div>
+        </div>
+        <div class="sunset">
+          <p>Sunset Time</p>
+          <i class="ri-sun-foggy-line"></i>
+          <div id="sunset"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
